@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4531433276656304}
   - component: {fileID: 212824235827772498}
-  - component: {fileID: 61813574065762284}
+  - component: {fileID: 60153456985069848}
   m_Layer: 0
   m_Name: pipe
   m_TagString: Pipe
@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4068783256233346}
   - component: {fileID: 212684065672931320}
-  - component: {fileID: 61092566389975988}
+  - component: {fileID: 60500716532204726}
   m_Layer: 0
   m_Name: pipe (1)
   m_TagString: Pipe
@@ -86,7 +86,7 @@ Transform:
   m_GameObject: {fileID: 1334748170727442}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.7, y: 2.84, z: -0.46000004}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.3, z: 1}
   m_Children: []
   m_Father: {fileID: 4810143625321132}
   m_RootOrder: 2
@@ -112,7 +112,7 @@ Transform:
   m_GameObject: {fileID: 1103164927950692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -4.25, z: -0.46000004}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.3, z: 1}
   m_Children: []
   m_Father: {fileID: 4810143625321132}
   m_RootOrder: 1
@@ -133,22 +133,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61092566389975988
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1334748170727442}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0.15669274, y: -0.019587517}
-  serializedVersion: 2
-  m_Size: {x: 1.4717329, y: 4.7012167}
---- !u!61 &61813574065762284
-BoxCollider2D:
+--- !u!60 &60153456985069848
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -158,9 +144,81 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.2123031, y: -0.041362286}
-  serializedVersion: 2
-  m_Size: {x: 1.438857, y: 4.736013}
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.97999996, y: -1.13}
+      - {x: 0.85999995, y: -0.98999995}
+      - {x: 0.76, y: -0.13}
+      - {x: 0.74, y: 0.03}
+      - {x: 0.71999997, y: 0.35}
+      - {x: 0.59999996, y: 0.39}
+      - {x: 0.5, y: 1.23}
+      - {x: 0.38, y: 2.29}
+      - {x: 0.35999998, y: 2.37}
+      - {x: 0.34, y: 2.3899999}
+      - {x: 0.12, y: 2.3899999}
+      - {x: 0.099999994, y: 2.33}
+      - {x: 0.02, y: 1.9499999}
+      - {x: -0.099999994, y: 1.35}
+      - {x: -0.14, y: 1.17}
+      - {x: -0.19999999, y: 0.87}
+      - {x: -0.29999998, y: 0.48999998}
+      - {x: -0.32, y: 0.29}
+      - {x: -0.38, y: -0.03}
+      - {x: -0.53999996, y: -0.17}
+      - {x: -0.56, y: -0.22999999}
+      - {x: -0.82, y: -1.1899999}
+      - {x: -0.85999995, y: -1.41}
+      - {x: -0.91999996, y: -1.5699999}
+      - {x: -1.04, y: -2.01}
+      - {x: -1.0799999, y: -2.11}
+      - {x: -1.0799999, y: -2.3899999}
+      - {x: 1.0799999, y: -2.3899999}
+      - {x: 1.0799999, y: -1.99}
+      - {x: 1.02, y: -1.53}
+--- !u!60 &60500716532204726
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334748170727442}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.58, y: -0.51}
+      - {x: 0.7, y: -0.32999998}
+      - {x: 0.74, y: -0.03}
+      - {x: 0.85999995, y: 1.01}
+      - {x: 0.96, y: 1.13}
+      - {x: 0.97999996, y: 1.23}
+      - {x: 1.02, y: 1.55}
+      - {x: 1.06, y: 1.8499999}
+      - {x: 1.0799999, y: 2.01}
+      - {x: 1.0799999, y: 2.3899999}
+      - {x: -1.0799999, y: 2.3899999}
+      - {x: -1.0799999, y: 2.1699998}
+      - {x: -1.06, y: 2.09}
+      - {x: -0.91999996, y: 1.5699999}
+      - {x: -0.76, y: 0.96999997}
+      - {x: -0.62, y: 0.45}
+      - {x: -0.56, y: 0.22999999}
+      - {x: -0.42, y: 0.07}
+      - {x: -0.35999998, y: -0.089999996}
+      - {x: -0.17999999, y: -0.98999995}
+      - {x: -0.12, y: -1.37}
+      - {x: 0.08, y: -2.23}
+      - {x: 0.099999994, y: -2.31}
+      - {x: 0.14, y: -2.3899999}
+      - {x: 0.35999998, y: -2.3899999}
+      - {x: 0.39999998, y: -2.31}
+      - {x: 0.39999998, y: -2.11}
+      - {x: 0.53999996, y: -0.84999996}
 --- !u!61 &61921551759572324
 BoxCollider2D:
   m_ObjectHideFlags: 1

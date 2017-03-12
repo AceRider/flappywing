@@ -36,7 +36,7 @@ public class PipesManager : MonoBehaviour
 		for (int i = 0; i < maxPipes; i++) {
 			// Encontra a posicao de cada pipe
 			pipePosition = Camera.main.ViewportToWorldPoint (
-				new Vector3 (1f + pipesOffset * i, Random.Range (-0.1f, 0.25f))
+				new Vector3 (1f + pipesOffset * i, Random.Range (0, 0.1f))
 			);
 			pipePosition.z = 0f;
 

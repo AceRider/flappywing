@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour {
 
 	void Update () {
 		
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetMouseButtonDown(0)) {
 			if (isDead) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 			} else {
@@ -74,15 +74,16 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		// Se for pipe entao mata o FlappyBird
-
 		if (collision.collider.CompareTag ("Pipe")) {
 			// Mooorreu :(
 			isDead = true;
 			// Deixa de colidir
 			GetComponent<Collider2D> ().isTrigger = true;
+
+
 		}
 	}
+		
 
 	IEnumerator hidePuff()
 	{
